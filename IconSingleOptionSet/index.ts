@@ -53,7 +53,7 @@ export class IconSingleOptionSet implements ComponentFramework.ReactControl<IInp
      */
     public updateView(_context: ComponentFramework.Context<IInputs>): React.ReactElement {
         
-        // If the form is diabled because it is inactive or the user doesn't have access
+        // If the form is disabled because it is inactive or the user doesn't have access
 		// isControlDisabled is set to true
 		let isReadOnly = _context.mode.isControlDisabled;
 
@@ -85,7 +85,7 @@ export class IconSingleOptionSet implements ComponentFramework.ReactControl<IInp
 		this._props.selectedcolor = _context.parameters.selectedcolor.raw || "";
 		this._props.readonly = isReadOnly;
 		this._props.masked = isMasked;
-		this._props.nullable = true; //todo add as a parameter in mamnifest
+		this._props.nullable = true; //todo add as a parameter in manifest
 
 
         return React.createElement(
