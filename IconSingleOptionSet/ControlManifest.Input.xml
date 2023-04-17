@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="PlainConcepts" constructor="IconSingleOptionSet" version="0.0.1" display-name-key="IconSingleOptionSet" description-key="IconSingleOptionSet description" control-type="virtual" >
+    
+    <property name="optionset" display-name-key="Primary Optionset" description-key="Select Optionset (5 values max)" of-type="OptionSet" usage="bound" required="true" />
+    <property name="icon1" display-name-key="Icon #1" description-key="Icon #1, list here  https://developer.microsoft.com/en-us/fabric#/styles/web/icons#fabric-icons-tool" of-type="SingleLine.Text" usage="input" required="false" default-value="EmojiDisappointed"/>
+    <property name="icon2" display-name-key="Icon #2" description-key="Icon #2, list here  https://developer.microsoft.com/en-us/fabric#/styles/web/icons#fabric-icons-tool" of-type="SingleLine.Text" usage="input" required="false" default-value="Sad"/>
+    <property name="icon3" display-name-key="Icon #3" description-key="Icon #3, list here  https://developer.microsoft.com/en-us/fabric#/styles/web/icons#fabric-icons-tool" of-type="SingleLine.Text" usage="input" required="false" default-value="EmojiNeutral"/>
+    <property name="icon4" display-name-key="Icon #4" description-key="Icon #4, list here  https://developer.microsoft.com/en-us/fabric#/styles/web/icons#fabric-icons-tool" of-type="SingleLine.Text" usage="input" required="false" default-value="Emoji2"/>
+    <property name="icon5" display-name-key="Icon #5" description-key="Icon #5, list here  https://developer.microsoft.com/en-us/fabric#/styles/web/icons#fabric-icons-tool" of-type="SingleLine.Text" usage="input" required="false" default-value="Emoji"/>
+    <property name="selectedcolor" display-name-key="Selected icon color" description-key="Selected icon color" of-type="SingleLine.Text" usage="input" required="false" default-value="#005A9E"/>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/IconSingleOptionSet.css" order="1" />
+      <resx path="strings/IconSingleOptionSet.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>
